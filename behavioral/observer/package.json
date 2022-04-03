@@ -1,0 +1,21 @@
+{
+  "name": "observer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "cross-env NODE_OPTIONs=--experimental-vm-modules npx jest --runInBand --watch --config ./jest.config.js",
+    "test:cov": "NODE_OPTIONS=--experimental-vm-modules npx jest --config ./jest.config.js --coverage"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "jest": "^27.5.1"
+  }
+}
